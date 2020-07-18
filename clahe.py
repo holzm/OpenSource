@@ -1,8 +1,6 @@
 import cv2
 import matplotlib.pyplot as plt
 
-res = cv2.equalizeHist(img)
-
 clahe = cv2.createCLAHE(clipLimit=2,tileGridSize=(10,10))
 cl1 = clahe.apply(img)
 
